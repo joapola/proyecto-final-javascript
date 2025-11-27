@@ -130,14 +130,14 @@ function renderTable() {
     const clone = rowTemplate.content.cloneNode(true);
     const tr = clone.querySelector('tr');
 
-    // ⬇️⬇️ ESTE BLOQUE ES LO QUE TE FALTABA (selectores correctos)
+    
     const tdTitle = clone.querySelector('.row-title');
     const tdSubject = clone.querySelector('.row-subject');
     const tdType = clone.querySelector('.row-type');
     const tdPriority = clone.querySelector('.badge--priority');
     const tdDate = clone.querySelector('.row-deadline');
     const tdTime = clone.querySelector('.row-time');
-    // ⬆️⬆️ ACÁ ES DONDE ESTABA EL BUG
+    
 
     tdTitle.textContent = activity.title;
     tdSubject.textContent = activity.subject || '-';
